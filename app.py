@@ -382,57 +382,118 @@ genai.configure(api_key=os.environ.get("GEMINI_API_KEY", "AIzaSyAWsewWyrj733Imgn
 model = genai.GenerativeModel("gemini-2.0-flash")  # Update to correct model if needed
 
 # Custom CSS for Sky-Blue Theme
+# st.markdown("""
+#     <style>
+#     body {
+#         background-color: #e0f2fe;
+#         font-family: 'Arial', sans-serif;
+#     }
+#     .stApp {
+#         background-color: #e0f2fe;
+#         padding: 20px;
+#         border-radius: 15px;
+#         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#     }
+#     h1, h2, h3 {
+#         color: #0369a1;
+#         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+#     }
+#     .stButton>button {
+#         background-color: #0284c7;
+#         color: white;
+#         border: none;
+#         border-radius: 8px;
+#         padding: 10px 20px;
+#         font-weight: bold;
+#         transition: background-color 0.3s;
+#     }
+#     .stButton>button:hover {
+#         background-color: #0369a1;
+#     }
+#     .stTextInput>input, .stTextArea>textarea {
+#         border: 2px solid #7dd3fc;
+#         border-radius: 8px;
+#         background-color: #f0f9ff;
+#         color: #0c4a6e;
+#     }
+#     .stSelectbox, .stSlider {
+#         background-color: #f0f9ff;
+#         border: 2px solid #7dd3fc;
+#         border-radius: 8px;
+#         padding: 5px;
+#     }
+#     .stFileUploader {
+#         background-color: #f0f9ff;
+#         border: 2px dashed #7dd3fc;
+#         border-radius: 8px;
+#         padding: 10px;
+#     }
+#     .stSuccess, .stWarning, .stError {
+#         background-color: #bae6fd;
+#         border: 1px solid #7dd3fc;
+#         border-radius: 8px;
+#         padding: 10px;
+#     }
+#     </style>
+# """, unsafe_allow_html=True)
+# Custom CSS for Forest Elegance theme
 st.markdown("""
     <style>
-    body {
-        background-color: #e0f2fe;
+    /* Target the entire app background */
+    body, .stApp {
+        background-color: #3D4127;
+        color: #D4DE95;
         font-family: 'Arial', sans-serif;
     }
-    .stApp {
-        background-color: #e0f2fe;
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
     h1, h2, h3 {
-        color: #0369a1;
+        color: #D4DE95;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     }
     .stButton>button {
-        background-color: #0284c7;
-        color: white;
+        background-color: #A8B364;
+        color: #3D4127;
         border: none;
         border-radius: 8px;
         padding: 10px 20px;
         font-weight: bold;
         transition: background-color 0.3s;
+        box-shadow: 0 2px 4px rgba(168, 179, 100, 0.2);
     }
     .stButton>button:hover {
-        background-color: #0369a1;
+        background-color: #8C964F;
+        box-shadow: 0 4px 8px rgba(168, 179, 100, 0.3);
     }
     .stTextInput>input, .stTextArea>textarea {
-        border: 2px solid #7dd3fc;
+        border: 2px solid #5A603A;
         border-radius: 8px;
-        background-color: #f0f9ff;
-        color: #0c4a6e;
+        background-color: #4A4E33;
+        color: #D4DE95;
     }
     .stSelectbox, .stSlider {
-        background-color: #f0f9ff;
-        border: 2px solid #7dd3fc;
+        background-color: #4A4E33;
+        border: 2px solid #5A603A;
         border-radius: 8px;
         padding: 5px;
+        color: #D4DE95;
     }
     .stFileUploader {
-        background-color: #f0f9ff;
-        border: 2px dashed #7dd3fc;
+        background-color: #4A4E33;
+        border: 2px dashed #5A603A;
         border-radius: 8px;
         padding: 10px;
+        color: #D4DE95;
     }
     .stSuccess, .stWarning, .stError {
-        background-color: #bae6fd;
-        border: 1px solid #7dd3fc;
+        background-color: #5A603A;
+        border: 1px solid #A8B364;
         border-radius: 8px;
         padding: 10px;
+        color: #D4DE95;
+    }
+    /* Ensure canvas background matches the theme */
+    .stCanvas {
+        background-color: #4A4E33;
+        border: 1px solid #5A603A;
     }
     </style>
 """, unsafe_allow_html=True)
