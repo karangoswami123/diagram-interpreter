@@ -575,14 +575,7 @@ def encode_image(image_data):
         return None
 
 # Text-to-speech function
-def text_to_speech(text, filename="response.mp3"):
-    try:
-        tts = gTTS(text=text, lang='en')
-        tts.save(filename)
-        return filename
-    except Exception as e:
-        st.error(f"🚫 TTS Error: {str(e)}")
-        return None
+
 
 # Analyze canvas and query
 def analyze_canvas_and_query(canvas_image, query, uploaded_image=None):
