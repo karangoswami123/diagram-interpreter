@@ -439,61 +439,61 @@ model = genai.GenerativeModel("gemini-2.0-flash")  # Update to correct model if 
 # Custom CSS for Forest Elegance theme
 st.markdown("""
     <style>
-    /* Target the entire app background */
-    body, .stApp {
-        background-color: #3D4127;
-        color: #D4DE95;
+    body {
+        background-color: #e0f2fe;  /* Light Blue Background */
         font-family: 'Arial', sans-serif;
     }
+    .stApp {
+        background-color: #e0f2fe;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
     h1, h2, h3 {
-        color: #D4DE95;
+        color: #001f3f;  /* Navy Blue Text for Headings */
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     }
+    p, li, label {
+        color: #001f3f;  /* Navy Blue Text for Paragraphs, Lists, and Labels */
+    }
     .stButton>button {
-        background-color: #A8B364;
-        color: #3D4127;
+        background-color: #004aad;  /* Dark Blue Button */
+        color: white;
         border: none;
         border-radius: 8px;
         padding: 10px 20px;
         font-weight: bold;
         transition: background-color 0.3s;
-        box-shadow: 0 2px 4px rgba(168, 179, 100, 0.2);
     }
     .stButton>button:hover {
-        background-color: #8C964F;
-        box-shadow: 0 4px 8px rgba(168, 179, 100, 0.3);
+        background-color: #003580;  /* Slightly Darker Blue on Hover */
     }
     .stTextInput>input, .stTextArea>textarea {
-        border: 2px solid #5A603A;
+        border: 2px solid #0369a1;  /* Blue Border for Input Fields */
         border-radius: 8px;
-        background-color: #4A4E33;
-        color: #D4DE95;
+        background-color: #f0f9ff;  /* Soft Blue Background */
+        color: #001f3f;  /* Navy Blue Text */
     }
     .stSelectbox, .stSlider {
-        background-color: #4A4E33;
-        border: 2px solid #5A603A;
+        background-color: #f0f9ff;
+        border: 2px solid #0369a1;
         border-radius: 8px;
         padding: 5px;
-        color: #D4DE95;
+        color: #001f3f;  /* Navy Blue Text */
     }
     .stFileUploader {
-        background-color: #4A4E33;
-        border: 2px dashed #5A603A;
+        background-color: #f0f9ff;
+        border: 2px dashed #0369a1;
         border-radius: 8px;
         padding: 10px;
-        color: #D4DE95;
+        color: #001f3f;  /* Navy Blue Text */
     }
     .stSuccess, .stWarning, .stError {
-        background-color: #5A603A;
-        border: 1px solid #A8B364;
+        background-color: #dbeafe;  /* Softer Blue for Success, Warnings, and Errors */
+        border: 1px solid #0369a1;
         border-radius: 8px;
         padding: 10px;
-        color: #D4DE95;
-    }
-    /* Ensure canvas background matches the theme */
-    .stCanvas {
-        background-color: #4A4E33;
-        border: 1px solid #5A603A;
+        color: #001f3f;  /* Navy Blue Text */
     }
     </style>
 """, unsafe_allow_html=True)
